@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>OOP School Library</b></h1>
+  <h1><b>Catalog of my things</b></h1>
 
 </div>
 
