@@ -1,3 +1,5 @@
+require_relative 'app'
+
 def display_menu
   puts '------------------------------------------------------'
   puts 'Welcome to the Catalog of My Things!'
@@ -11,8 +13,11 @@ def display_menu
   puts '7 - Add a book'
   puts '8 - Add a music album'
   puts '9 - Add a game'
-  puts '10 - Exit'
+  puts '10 - Add an author'
+  puts '11 - Exit'
 end
+
+app = App.new
 
 loop do
   display_menu
@@ -23,20 +28,22 @@ loop do
   when 2
   # your code here
   when 3
-  # your code here
+    app.list_games
   when 4
   # your code here
   when 5
   # your code here
   when 6
-  # your code here
+    app.list_authors
   when 7
   # your code here
   when 8
   # your code here
   when 9
-  # your code here
+    app.add_game
   when 10
+    app.add_author
+  when 11
     puts 'Thanks for using Catalog of My Things app!'
     break
   else
