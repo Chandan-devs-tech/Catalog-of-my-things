@@ -13,11 +13,11 @@ def display_menu
   puts '7 - Add a book'
   puts '8 - Add a music album'
   puts '9 - Add a game'
-  puts '10 - Add an author'
-  puts '11 - Exit'
+  puts '10 - Exit'
 end
 
 app = App.new
+app.load_data
 
 loop do
   display_menu
@@ -42,8 +42,7 @@ loop do
   when 9
     app.add_game
   when 10
-    app.add_author
-  when 11
+    app.save_data
     puts 'Thanks for using Catalog of My Things app!'
     break
   else
